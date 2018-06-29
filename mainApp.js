@@ -44,13 +44,15 @@ let saveData = () => {
 }
 
 let fetchData = () => {
-
+ alert("before");
   if(document.getElementById('ImgHeight').value = ""){
-	  alert("empty")
+	  alert("empty");
 	  sdk.setContent(defaultContent);}
 	else(
 
     sdk.getData((data) => {
+	    
+	     alert("after");
         if (Object.keys(data).length > 0) {
             imgData = data;
          
@@ -59,11 +61,11 @@ let fetchData = () => {
       document.getElementById('ImageURL').value = imgData.ImageURL;
     document.getElementById('Text').value = imgData.Text;
 	document.getElementById('Textcolor').value = imgData.Textcolor;
-			
+		 alert("finaol");	
      
         }
 		
-    });
+    })
 )
 }
 
