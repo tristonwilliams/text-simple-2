@@ -45,7 +45,7 @@ let saveData = () => {
 
 let fetchData = () => {
  alert("before");
-  if(document.getElementById('ImgHeight').value = ""){
+  if(document.getElementById('ImgHeight').value != ""){
 	  alert("empty");
 	  sdk.setContent(defaultContent);}
 	else(
