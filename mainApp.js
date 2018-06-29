@@ -1,5 +1,6 @@
 
 
+
 // if (window.self === window.top) {
 //     document.body.innerText = 'This application is for use in the Salesforce Marketing Cloud Content Builder only!';;
 // }
@@ -44,7 +45,9 @@ let saveData = () => {
 
 let fetchData = () => {
 
-  if(imgData.ImageURL = ""){sdk.setContent(defaultContent);}
+  if(document.getElementById('ImgHeight').value = ""){
+	  alert("empty")
+	  sdk.setContent(defaultContent);}
 	else(
 
     sdk.getData((data) => {
@@ -60,7 +63,7 @@ let fetchData = () => {
      
         }
 		
-    })
+    });
 )
 }
 
@@ -73,3 +76,4 @@ let fetchData = () => {
 
 window.onload = fetchData;
 window.onchange = saveData;
+
