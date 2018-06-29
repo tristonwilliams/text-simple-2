@@ -44,7 +44,8 @@ let saveData = () => {
 
 let fetchData = () => {
 
-  
+  if(imgData.ImageUR = ""){sdk.setContent(defaultContent);}
+	else(
 
     sdk.getData((data) => {
         if (Object.keys(data).length > 0) {
@@ -59,8 +60,8 @@ let fetchData = () => {
      
         }
 		
-    });
-
+    })
+)
 }
 
 
@@ -72,4 +73,3 @@ let fetchData = () => {
 
 window.onload = fetchData;
 window.onchange = saveData;
-
