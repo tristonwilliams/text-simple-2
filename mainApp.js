@@ -44,7 +44,7 @@ let saveData = () => {
 
 let fetchData = () => {
 
-  if(imgData.ImageUR = ""){sdk.setContent(defaultContent);}
+  if(imgData.ImageURL = ""){sdk.setContent(defaultContent);}
 	else(
 
     sdk.getData((data) => {
