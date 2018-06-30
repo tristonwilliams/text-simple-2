@@ -40,10 +40,7 @@ let saveData = () => {
 }
 
 let fetchData = () => {
-        alert("before");
-
-
-
+        
         sdk.getData((data) => {
 
 
@@ -62,14 +59,15 @@ let fetchData = () => {
                     document.getElementById('ImageURL').value = imgData.ImageURL;
                     document.getElementById('Text').value = imgData.Text;
                     document.getElementById('Textcolor').value = imgData.Textcolor;
-                    alert("finaol");
+                    alert("final");
 
-                } else {
+                } 
+			else {
                     alert("empty");
 
                 }
             }
-        }
+        )}
 
         window.onload = fetchData;
         window.onchange = saveData;
