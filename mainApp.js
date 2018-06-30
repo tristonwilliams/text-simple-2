@@ -47,7 +47,7 @@ let fetchData = () => {
  alert("before");
 	alert(imgData.ImageURL);
 	alert(document.getElementById('ImageURL').value);
-  if(imgData.ImageURL = ""){
+  if(document.getElementById('ImageURL').value = "" || !document.getElementById('ImageURL').value){
 	  alert("empty");
 	  sdk.setContent(defaultContent);}
 	else(
