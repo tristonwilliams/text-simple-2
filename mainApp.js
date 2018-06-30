@@ -67,7 +67,9 @@ let fetchData = () => {
 
                 }
             }
-        )}
+        );
+}
+
 
         window.onload = fetchData;
         window.onchange = saveData;
