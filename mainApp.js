@@ -47,13 +47,13 @@ let fetchData = () => {
  alert("before");
 	alert(imgData.ImageURL);
 	alert(document.getElementById('ImageURL').value);
-  if(document.getElementById('ImageURL').value = "" || !document.getElementById('ImageURL').value){
+ 
+
+    sdk.getData((data) => {
+	     if(document.getElementById('ImageURL').value = "" || !document.getElementById('ImageURL').value){
 	  alert("empty");
 	  sdk.setContent(defaultContent);}
 	else(
-
-    sdk.getData((data) => {
-	    
 	     alert("after");
         if (Object.keys(data).length > 0) {
             imgData = data;
