@@ -47,7 +47,7 @@ let fetchData = () => {
 
     sdk.getData((data) => {
         if (Object.keys(data).length > 0) {
-            imgData = data;
+           // imgData = data;
          
 			
 	document.getElementById('ImgHeight').value = imgData.ImgHeight;
