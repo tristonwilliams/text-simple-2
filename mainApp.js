@@ -49,24 +49,24 @@ let saveData = () => {
 
 let fetchData = () => {
 
-  Alert(imgData);
+  
 
     sdk.getData((data) => {
         if (Object.keys(data).length > 0) {
             imgData = data;
-         Alert(imgData);
+         
 			
-	document.getElementById('ImgHeight').value = imgData.ImgHeight;
-      document.getElementById('ImageURL').value = imgData.ImageURL;
-    document.getElementById('Text').value = imgData.Text;
-	document.getElementById('Textcolor').value = imgData.Textcolor;
+	document.getElementById('ImgHeight').value = 400;
+      document.getElementById('ImageURL').value = 'http://image.s4.exct.net/lib/fe8f15737c62077a76/m/1/a9836fc9-54dc-434a-a09f-2b2ca88ce146.png;
+    document.getElementById('Text').value = 'Text';
+	document.getElementById('Textcolor').value = '#000000';
 			
-     Alert(imgData);
+     
         }
 		
     });
 	console.log(JSON.stringify(imgData));
-Alert(imgData);
+
 }
 
 
