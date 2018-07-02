@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-	
-<head>
-    <title>Text Over Image</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
-</head>
-
-<body>
+<html>
+   <head>
+      <title>text over Image</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <style>
+         img {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         }
+      </style>
+   </head>
+   <body>
       <div class="container">
          <form class="form-horizontal">
             <fieldset>
@@ -27,14 +25,14 @@
                <div class="form-group">
                   <label class="col-md-4 control-label" for="ImageURL">Image URL</label>
                   <div class="col-md-4">
-                     <input id="ImageURL" name="ImageURL" type="text" placeholder="Image URL" class="form-control input-md"  value="http://image.s4.exct.net/lib/fe8f15737c62077a76/m/1/a9836fc9-54dc-434a-a09f-2b2ca88ce146.png">
+                     <input id="ImageURL" name="ImageURL" type="text" placeholder="Image URL" class="form-control input-md" >
                   </div>
                </div>
                <!-- Text input-->
                <div class="form-group">
                   <label class="col-md-4 control-label" for="mapHeight">Height</label>
                   <div class="col-md-2">
-                     <input id="ImgHeight" name="ImgHeight" type="text" placeholder="Height" class="form-control input-md"  value="400" >
+                     <input id="ImgHeight" name="ImgHeight" type="text" placeholder="Height" class="form-control input-md" >
                   </div>
                </div>
                <!-- Text input-->
@@ -42,7 +40,7 @@
                   <label class="col-md-4 control-label" for="Text">Text</label>
                   <div class="col-md-4">
                      <div id="standalone-container">
-                        <input id="Text" name="Text" type="text" placeholder="Text on Top Of image" class="form-control input-md"  value="Text Over Image">
+                        <input id="Text" name="Text" type="text" placeholder="Text on Top Of image" class="form-control input-md">
                      </div>
                   </div>
                </div>
@@ -60,13 +58,10 @@
                      </div>
                   </div>
                </div>
-
       </fieldset>
       </form>
       </div>
-  
       <script src="/blocksdk.js"></script>
       <script src="/mainApp.js"></script>
    </body>
 </html>
-
