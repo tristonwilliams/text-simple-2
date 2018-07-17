@@ -52,7 +52,7 @@ let fetchData = () => {
         //if (Object.keys(data).length > 0) {
           //imgData = data;
          
-	    alert("imgData["ImgHeight"]")
+	    alert("imgData["ImgHeight"]");
 			
 	document.getElementById('ImgHeight').value = imgData["ImgHeight"];
       document.getElementById('ImageURL').value = imgData["ImageURL"];
