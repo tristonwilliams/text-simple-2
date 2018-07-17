@@ -46,23 +46,27 @@ let saveData = () => {
 
 let fetchData = () => {
 
-  
-
-    sdk.getData(imgData, (data) =>{
-        //if (Object.keys(data).length > 0) {
-          //imgData = data;
+      sdk.getData((data) => {
+        if (Object.keys(data).length > 0) {
+           // imgData = data;
          
-	    alert(imgData["ImgHeight"]);
 			
-	document.getElementById('ImgHeight').value = imgData["ImgHeight"];
-      document.getElementById('ImageURL').value = imgData["ImageURL"];
-    document.getElementById('Text').value = imgData["Text"];
-	document.getElementById('Textcolor').value = imgData["Textcolor"];
+	 alert(imgData["ImgHeight"]);
 			
+	//document.getElementById('ImgHeight').value = imgData["ImgHeight"];
+     // document.getElementById('ImageURL').value = imgData["ImageURL"];
+  //  document.getElementById('Text').value = imgData["Text"];
+	//document.getElementById('Textcolor').value = imgData["Textcolor"];
      
-        //}
+        }
 		
     });
+
+   
+         
+	   
+			
+
 
 }
 
