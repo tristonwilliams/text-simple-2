@@ -53,10 +53,10 @@ let fetchData = () => {
 			
 	 alert(imgData["ImgHeight"]);
 			
-	//document.getElementById('ImgHeight').value = imgData["ImgHeight"];
-     // document.getElementById('ImageURL').value = imgData["ImageURL"];
-  //  document.getElementById('Text').value = imgData["Text"];
-	//document.getElementById('Textcolor').value = imgData["Textcolor"];
+	document.getElementById('ImgHeight').value = imgData["ImgHeight"];
+   document.getElementById('ImageURL').value = imgData["ImageURL"];
+ document.getElementById('Text').value = imgData["Text"];
+	document.getElementById('Textcolor').value = imgData["Textcolor"];
      
         }
 		
