@@ -38,10 +38,11 @@ let saveData = () => {
             sdk.setSuperContent(defaultContent, (newSuperContent) => {});
             // content = defaultContent;
         }
-		
+	 alert(imgData["ImageURL"]);
+	
         sdk.setContent(content);
     });
-
+ alert(imgData["Text"]);
 }
 
 let fetchData = () => {
